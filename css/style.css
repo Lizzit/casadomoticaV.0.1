@@ -1,0 +1,372 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+  font-family: 'Courgette', cursive;/*insert googlefont's instruction*/
+}
+
+nav .nav-wrapper {
+    padding: 0px 50px;
+}
+
+nav .brand-logo {
+  color: #444;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 2.5rem;
+}
+
+nav ul a {
+  color: #444;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 1.5rem;  
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: black;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  font-family: 'Permanent Marker', cursive;
+}
+
+.section-intro{
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  margin-top: 15%;
+}
+
+.header-sub{
+  margin-top: 5%;
+}
+
+.col-servizio{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.btn-registrazione{
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 50%;
+  font-family: 'Courgette', cursive;
+}
+
+.btn-data{
+  font-size: 1.5em;
+  height: 2.5em;
+  width: 25%;
+  font-family: 'Courgette', cursive;
+}
+
+.section-registrazione {
+  width: 100%;
+  height: 100%;
+}
+
+.social-icon{
+  font-size: 1.5em;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.social-icon:hover {
+  color: blue;
+}
+
+footer .page-footer {
+  margin: 0;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  nav .nav-wrapper{
+    padding: 0px 10px;
+  }
+}
+
+@media only screen and (min-width: 993px){
+  .row .col.l4 {
+    margin-left: 150px;
+  }
+}
+
+.form{
+  display:inline-block;
+  text-decoration:none;
+  background-color:#267DDD;
+  color:white;
+  cursor:pointer;
+  font-family:Helvetica,Arial,sans-serif;
+  font-size:20px;
+  line-height:50px;
+  text-align:center;
+  margin:0;
+  height:50px;
+  padding:0px 33px;
+  border-radius:25px;
+  max-width:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-weight:bold;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* reset stili */
+
+/*ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  /* lista orizzontale */
+  
+  #menu li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* menu */
+  
+  #menu {
+    width: 100%;
+    background-color: #005996;
+    background: -moz-linear-gradient(#444, #111); /* firefox*/
+    background: linear-gradient(#444, #111);
+    border: 1px solid #222;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #777;
+    text-align: center;
+  }
+  
+  /* links */
+  
+  li a {
+    display: block;
+    padding: 12px 20px;
+    width: 150px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 0.7em 'Cougrette', cursive;
+    text-decoration: none;
+    text-shadow: 0 1px #000;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 #444;
+  }
+
+  h3 a{
+    text-decoration: none;
+  }
+  
+  /* rimuoviamo il bordo e l'ombreggiatura dall'ultimo link del menu */
+  
+  #donate {
+    border: none;
+    box-shadow: none;  
+  }
+  
+  /* links hover */
+  
+  a:hover {
+    color: #5b9279;
+  }
+  /* sub menu */
+  
+  #menu li .hidden {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #005996;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  
+  /* links sub menu */
+  
+  #menu li .hidden li a {
+    width: 100px;
+    border-bottom: 1px solid #202020;
+    border-right: none;
+    box-shadow: none;
+  }
+  /* menu hover */
+  
+  #menu li:hover .hidden {
+    margin-top: -65px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease; /* safari and chrome */
+    -moz-transition: all 0.5s ease; /* firefox */
+    -o-transition: all 0.5s ease; /* opera */
+    transition: all 0.5s ease;
+    visibility: visible;
+  }
+  @media only screen and (max-width: 768px) {
+    
+  #menu {
+    background: none;
+    border: none;
+    border-radius: 0;  
+    box-shadow: none;
+    text-align: center;
+    display: none;  
+  }
+    
+  /* rendiamo gli elementi dei menu elementi di blocco */  
+    
+  ul li {
+    display: block;
+  }
+    
+  /* impostiamo la larghezza massima per gli elementi dei menu e i links */  
+    
+  ul li, ul li a {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+    
+  #menu li .hidden li, #menu li .hidden li a {
+    width: 100%;
+  }
+  
+  /* rendiamo visibili gli elementi del sub menu solo al passaggio del mouse */  
+    
+  #menu li .hidden li {
+    display: none;
+  }
+   
+  #menu li:hover .hidden li {
+    display: block;
+  }  
+  
+  /* aumentiamo la grandezza dei links */ 
+    
+  li a {
+    font: bold 0.9em 'Cougrette', cursive;
+    font-size: 1.2em;
+  } 
+
+  #box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+  }
+    
+  /* resettiamo la posizione degli elementi del menu */  
+    
+  #menu li {
+    position: static;
+  }  
+    
+  /* resettiamo la posizione del sub menu e lo rendiamo visibile */  
+  
+  #menu li .hidden {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+  }
+    
+  /* rimuoviamo bordo e ombreggiatura dai links del menu */
+    
+  #menu li a {
+    border: none;
+    box-shadow: none;  
+  }  
+    
+  /* nessuna animazione al passaggio del mouse */  
+    
+  #menu li:hover .hidden {
+    margin: 0;
+  } 
+    
+  /* rimuoviamo il bordo dai links del sub menu */  
+    
+  #menu li .hidden li a {
+    border: none;
+  }
+    
+  /*diamo un colore di sfondo agli elementi del menu e del sub menu */
+    
+  #menu li {
+    background-color:  black;
+  }
+    
+  #menu li .hidden li {
+    background-color: #009688;
+  } 
+  
+  }
+  
+  /* diamo uno stile al pulsante del menu e nascondiamolo */
+  
+  .showMenu {
+    padding: 10px 0;
+    color: white;
+    background:  #009688;
+    text-align: center;
+    display: none;
+    font-size: 1.3em;
+    
+  }
+  /* nascondiamo il checkbox */
+  
+  input[type=checkbox]{
+    display: none;
+  }
+  
+  /* mostriamo il menu quando il checkbox viene selezionato */
+  
+  input[type=checkbox]:checked ~ #menu {
+    display: block;
+  }
+  /* mostriamo il pulsante del menu */
+          
+  .showMenu {
+    display: block;
+  }
+
+  .main{
+      height: 100px;
+      width: 100px;
+      display: inline-block;
+  }
