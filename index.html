@@ -1,7 +1,11 @@
-{% extends "base.html" %}
-    <title>{% block head_title %}{{ block.super }} {% endblock head_title %}</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="files">
 
-{% block content %}
+    </div>
+</head>
+<body>
     <!-- Amazon -->
     <div id="index-banner" class="parallax-container">
         <div class="section-intro no-pad-bot">
@@ -58,4 +62,12 @@
         </div>
         <div class="parallax"><img src="images/googlehome.jpg" alt="Unsplashed background img 1"></div>
     </div>
-{% endblock content %}
+
+    <script type="text/javascript">
+
+        $(function () {
+            $(".files").load("base.html");
+        });
+    </script>
+</body>
+</html>
